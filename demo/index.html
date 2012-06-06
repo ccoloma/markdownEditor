@@ -9,18 +9,17 @@
 <body>
 
 	<h1>Markdownjs sandbox</h1>
-	<div class="cols"></div>
-	<div class="rows"></div>
+	<div class="markdown-placeholder"></div>
 
 	<script src="../lib/showdown.js"></script>
+	<script src="../lib/keymaster.js"></script>
 	<script src="../lib/jquery.js"></script>
 	<script src="../lib/jquery-fieldselection.js"></script>
 	<script src="../src/jquery.markdownEditor.js"></script>
 	<script>
-	$('.cols').markdownEditor({
+	$('.markdown-placeholder').markdownEditor({ 
 		value: 'Lots of *stuff* to try'
 	});
-	$('.rows').markdownEditor();
 	</script>
 </body>
 </html>
